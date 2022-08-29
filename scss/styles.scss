@@ -16,7 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     // border: 3px solid red;
-    overflow: hidden; //Para ocultar el scroll-bar
+    overflow-x: hidden; //Para ocultar el scroll-bar
+    overflow-y: auto;
     h1 {
         margin: 20px auto;
     }
