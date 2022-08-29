@@ -1,7 +1,7 @@
 header {
     position: relative;
     left: -10px;
-    // top: -1px;
+    top: -10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,6 +11,6 @@ header {
     padding: 4px;
     max-height: 100px;
     img {
-        height: 90%;
+        height: 70%;
     }
 }

@@ -1,6 +1,7 @@
 header {
   position: relative;
   left: -10px;
+  top: -10px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -11,55 +12,70 @@ header {
   max-height: 100px;
 }
 header img {
-  height: 90%;
+  height: 70%;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 1.2vw);
   font-family: "DynaPuff", cursive;
-}
-
-a {
-  text-decoration: none;
 }
 
 body {
   width: 100vw;
   height: 100vh;
-  padding: 4px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+}
+body h1 {
+  margin: 20px auto;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  margin: 20px auto;
+a {
+  text-decoration: none;
+}
+a:hover .links {
+  border: 5px solid #0C1484;
+  width: 85vw;
+}
+a:focus {
+  outline: none;
+}
+a:focus .links {
+  border: 5px solid #0C1484;
+  width: 85vw;
 }
 
 .links {
   transition: 0.3s all;
-  margin: 10px auto;
+  margin: 4px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 5vh;
-  width: 80%;
-  max-width: 800px;
-  border-radius: 30px;
+  width: 70vw;
+  border-radius: 20px;
   border: 5px solid #2665d6;
   background: #2665d6;
 }
-.links:hover {
-  border: 5px solid #0C1484;
-  width: 90vw;
-}
 .links .links_img {
+  padding: 2px;
   height: 90%;
+  aspect-ratio: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #fff;
+  border-radius: 50%;
 }
 .links .links_img img {
   height: 80%;
@@ -72,4 +88,20 @@ h1 {
   justify-content: center;
   align-items: center;
   color: white;
+}
+
+.mas-margen {
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 1023px) {
+  * {
+    font-size: calc(0.8rem + 0.8vw);
+  }
+  .links {
+    width: 50vw;
+  }
+  .links:hover {
+    width: 75vw;
+  }
 }/*# sourceMappingURL=styles.css.map */
