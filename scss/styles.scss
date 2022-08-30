@@ -6,7 +6,8 @@
     padding: 0;
     box-sizing: content-box;
     // border: 1px solid red;
-    font-size: calc(1rem + 1.2vw);
+    // font-size: calc(1rem + 1.2vw);
+    font-size: clamp(0.9rem, calc(1rem + 1.2vw), 2.2vw);
     font-family: 'DynaPuff', cursive;
 }
 
@@ -99,9 +100,9 @@ a {
 }
 
 @media only screen and (min-width: 1023px) {
-    * {
-        font-size: calc(0.8rem + 0.8vw);
-    }
+    // * {
+    //     font-size: calc(0.8rem + 0.8vw);
+    // }
     .links {
         width: 50vw;
         &:hover {
