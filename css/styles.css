@@ -20,7 +20,7 @@ header img {
   padding: 0;
   box-sizing: content-box;
   font-size: clamp(0.9rem, 1rem + 1.2vw, 2.2vw);
-  font-family: "DynaPuff", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
