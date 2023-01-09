@@ -5,10 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
-    // border: 1px solid red;
-    // font-size: calc(1rem + 1.2vw);
     font-size: clamp(0.9rem, calc(1rem + 1.2vw), 2.2vw);
     font-family: 'Roboto', sans-serif;
+    //outline: 1px solid red;
 }
 
 body {
@@ -37,7 +36,7 @@ a {
     &:hover {
         .links {
             border: 5px solid $azul-oscuro;
-            width: 85vw;
+            width: 65vw;
         }
     }
 
@@ -96,7 +95,7 @@ a {
 }
 
 .mas-margen {
-    margin-top: 20px;
+    margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 1023px) {
@@ -106,7 +105,15 @@ a {
     .links {
         width: 50vw;
         &:hover {
-            width: 75vw;
+            .links {
+                width: 65vw;
+            }
+        }
+
+        &:focus {
+            .links {
+                width: 85vw;
+            }
         }
     }
 }

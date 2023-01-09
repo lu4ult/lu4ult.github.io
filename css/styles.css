@@ -46,7 +46,7 @@ a {
 }
 a:hover .links {
   border: 5px solid #0C1484;
-  width: 85vw;
+  width: 65vw;
 }
 a:focus {
   outline: none;
@@ -92,14 +92,17 @@ a:focus .links {
 }
 
 .mas-margen {
-  margin-top: 20px;
+  margin-top: 1.5rem;
 }
 
 @media only screen and (min-width: 1023px) {
   .links {
     width: 50vw;
   }
-  .links:hover {
-    width: 75vw;
+  .links:hover .links {
+    width: 65vw;
+  }
+  .links:focus .links {
+    width: 85vw;
   }
 }/*# sourceMappingURL=styles.css.map */
